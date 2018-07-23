@@ -1,3 +1,9 @@
 from django.contrib import admin
+from .models import Visitante
 
-# Register your models here.
+
+class VisitanteAdmin(admin.ModelAdmin):
+    list_display = ('nome', 'email', 'telefone', 'celular',)
+
+
+admin.site.register(Visitante, VisitanteAdmin, )

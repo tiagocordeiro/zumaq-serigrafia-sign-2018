@@ -24,3 +24,9 @@ def visitante_cadastrado(request):
 def visitante_sorteio(request):
     visitantes = Visitante.objects.all()
     return render(request, 'registro/sorteio.html', {'visitantes': visitantes})
+
+
+def visitante_sorteio_result(request):
+    visitantes = Visitante.objects.all().order_by('?')[:1]
+    return render(request, 'registro/sorteio_result.html',
+                  {'visitantes': visitantes})

@@ -27,7 +27,26 @@
             </div>
         </div>
         <div class="col-md-12">
-
+            <div class="table-responsive">
+            <table class="table">
+                <thead>
+                    <tr>
+                    <th scope="col">ID</th>
+                    <th scope="col">Nome</th>
+                    <th scope="col">Email</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    {% for visitante in visitantes %}
+                    <tr>
+                    <th scope="row">{{ visitante.id }}</th>
+                    <td>{{ visitante.nome }}</td>
+                    <td>{{ visitante.email }}</td>
+                    </tr>
+                    {% endfor %}
+                </tbody>
+            </table>
+            </div>
         </div>
     </div>
 </div>

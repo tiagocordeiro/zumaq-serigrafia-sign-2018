@@ -25,7 +25,7 @@ foo@bar:~/zumaq-serigrafia-sign-2018 $ source venv/bin/activate
 (venv) foo@bar:~/zumaq-serigrafia-sign-2018 $ python manage.py migrate
 ```
 
-### Pronto, basta rodar o projeto e abrir o endereço no seu navegador
+### Pronto, basta rodar o projeto e abrir o endereço no seu navegador (http://127.0.0.1:8000/)
 ```console
 (venv) foo@bar:~/zumaq-serigrafia-sign-2018 $ python manage.py runserver
 Performing system checks...
@@ -36,3 +36,17 @@ Django version 2.0.7, using settings 'zumaqleads.settings'
 Starting development server at http://127.0.0.1:8000/
 Quit the server with CONTROL-C.
 ```
+
+### Sorteio
+Talvez você queira realizar um sorteio entre os cadastrados.
+Para isso, acesse a url: http://127.0.0.1:8000/sorteio/
+e clique em sortear.
+
+É isso.
+
+
+#### Criando um administrador para o Django Admin
+```console
+(venv) foo@bar:~/zumaq-serigrafia-sign-2018 $ python manage.py createsuperuser
+```
+Para acessar o django-admin a url: http://127.0.0.1:8000/admin/

@@ -1,5 +1,6 @@
 from django.shortcuts import render, redirect
 from .forms import VisitanteForm
+from .models import Visitante
 
 
 def visitante_new(request):
@@ -18,3 +19,8 @@ def visitante_new(request):
 
 def visitante_cadastrado(request):
     return render(request, 'registro/thanks.html')
+
+
+def visitante_sorteio(request):
+    visitantes = Visitante.objects.all()
+    return render(request, 'registro/sorteio.html', {'visitantes': visitantes})

@@ -16,11 +16,11 @@
 <nav class="navbar navbar-expand-lg navbar-dark bg-dark navbar-fixed-top">
     <button class="navbar-toggler collapsed" type="button" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
         <span class="navbar-toggler-icon"></span>
-    </button> <a class="navbar-brand" href="#">Zumaq</a>
+    </button> <a class="navbar-brand" href="{% url 'visitante_new'  %}">Zumaq</a>
     <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
         <ul class="navbar-nav ml-md-auto">
             <li class="nav-item active">
-                <a class="nav-link" href="#">Cadastro <span class="sr-only">(current)</span></a>
+                <a class="nav-link" href="{% url 'visitante_new'  %}">Cadastro <span class="sr-only">(current)</span></a>
             </li>
         </ul>
     </div>

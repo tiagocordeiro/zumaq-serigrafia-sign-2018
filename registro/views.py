@@ -8,9 +8,13 @@ def visitante_new(request):
         if form.is_valid():
             visitante = form.save(commit=False)
             visitante.save()
-            return redirect(visitante_new)
+            return redirect(visitante_cadastrado)
 
     else:
         form = VisitanteForm()
 
     return render(request, 'registro/new.html', {'form': form})
+
+
+def visitante_cadastrado(request):
+    return render(request, 'registro/thanks.html')

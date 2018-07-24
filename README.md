@@ -36,27 +36,3 @@ Django version 2.0.7, using settings 'zumaqleads.settings'
 Starting development server at http://127.0.0.1:8000/
 Quit the server with CONTROL-C.
 ```
-
-
-Performing system checks...
-
-System check identified no issues (0 silenced).
-July 23, 2018 - 22:36:44
-Django version 2.0.7, using settings 'zumaqleads.settings'
-Starting development server at http://127.0.0.1:8000/
-Quit the server with CONTROL-C.
-
-
-
-`~ $ cd zumaq-serigrafia-sign-2018`
-`~/zumaq-serigrafia-sign-2018 $ python3 -m venv venv`
-`~/zumaq-serigrafia-sign-2018 $ source venv/bin/activate`
-`(venv) ~/zumaq-serigrafia-sign-2018 $`
-
-
-```console
-foo@bar:~$ git clone https://github.com/tiagocordeiro/zumaq-serigrafia-sign-2018.git
-foo@bar:~$ cd zumaq-serigrafia-sign-2018
-foo@bar:~/zumaq-serigrafia-sign-2018 $ 
-```
-
